@@ -28,10 +28,12 @@
     position: fixed;
     right: 50px;
     bottom: 25px;
+    display: flex;
+    flex-direction: column; /* Alinea los iconos en columna */
+    gap: 10px; /* Espaciado entre los iconos */
   }
   
   .button-link {
-    margin-top: 10px;
     background-color: #ffffff;
     cursor: pointer;
     box-shadow: 6px 6px 12px #c7c7c7, -6px -6px 12px #ffffff;
@@ -53,18 +55,6 @@
   .button-link:active {
     box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
       inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-  }
-  
-  .github {
-    fill: #555; /* Icon color for GitHub */
-  }
-  
-  .website {
-    fill: #7aefff; /* Icon color for Website */
-  }
-  
-  .donations {
-    fill: #ff7878; /* Icon color for Donations */
   }
   
   svg {
