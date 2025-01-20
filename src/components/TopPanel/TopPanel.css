@@ -1,0 +1,45 @@
+.TopPanel {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    /*justify-content: space-between; /* Separa los elementos hacia los extremos */
+    background-color: black;
+    padding: 10px 20px; /* Espaciado interno */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .status-text-good {
+    color: #c7ffc2;
+  }
+  
+  .status-text-info {
+    color: #a3f4ff;
+  }
+  
+  .corner-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .corner-icon:hover {
+    transform: rotate(180deg);
+  }
+  
+  .connection-status {
+    color: white;
+    font-size: 10.5pt;
+    line-height: 20px;
+    vertical-align: middle;
+    display: flex; /* Flexbox para los elementos internos */
+    align-items: center;
+    gap: 10px; /* Espaciado entre elementos */
+  }
+  
+  .connection-status span {
+    margin-left: 5px;
+  }
+  
