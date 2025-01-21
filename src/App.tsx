@@ -4,6 +4,7 @@ import Home from "./components/pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SidePanel from "./components/SidePanel/SidePanel";
 import About from "./components/pages/About/About";
+import TemperatureMap from "./components/pages/satellite/TemperatureMap/TemperatureMap";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/temperaturemap" element={<TemperatureMap />} />
           </Routes>
         </div>
       </div>
