@@ -2,14 +2,14 @@
     text-align: center;
     padding: 20px;
     background-color: whitesmoke;
+    height: 100vh;
   }
   
   .about-logo {
-    width: 70%;
+    width: 40vw;
     max-width: 794.5px;
     height: auto;
     margin: 0 auto;
-    display: block;
   }
   
   .central-text {

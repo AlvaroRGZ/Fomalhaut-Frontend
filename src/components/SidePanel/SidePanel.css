@@ -1,8 +1,7 @@
 .SidePanel {
-    height: 100%;
+    height: 100vh;
     background-color: #272a2d;
     padding: 20px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
   }
