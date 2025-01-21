@@ -3,7 +3,7 @@ import "./TemperatureMap.css";
 
 import * as THREE from 'three'
 import { Canvas } from "@react-three/fiber";
-import useWindowDimensions from "../../../utilities/useWindowDimensions"
+import useWindowDimensions from "../../../../utilities/useWindowDimensions"
 
 interface TemperatureMapProps {}
 
