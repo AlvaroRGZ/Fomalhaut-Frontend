@@ -10,9 +10,11 @@ function App() {
       <TopPanel />
       <div className="App">
         <SidePanel />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <div className="App-body">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
