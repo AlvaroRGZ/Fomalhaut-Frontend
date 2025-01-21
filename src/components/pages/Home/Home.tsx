@@ -41,17 +41,17 @@ const Home: FC<HomeProps> = () => (
     <div className="about-links">
       <div className="button-link">
         <a href="https://github.com/Teidesat/Fomalhaut">
-          <FaGithub />
+          <FaGithub color="black" />
         </a>
       </div>
       <div className="button-link">
         <a href="https://hyperspacegroup.com/">
-          <CiGlobe />
+          <CiGlobe color="blue"/>
         </a>
       </div>
       <div className="button-link">
         <a href="https://donorbox.org/hyperspace-canarias">
-          <FaHeart />
+          <FaHeart color="red"/>
         </a>
       </div>
     </div>
