@@ -1,8 +1,9 @@
 import "./App.css";
 import TopPanel from "./components/TopPanel/TopPanel";
-import Home from "./components/Home/Home";
+import Home from "./components/pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SidePanel from "./components/SidePanel/SidePanel";
+import About from "./components/pages/About/About";
 
 function App() {
   return (
@@ -10,9 +11,12 @@ function App() {
       <TopPanel />
       <div className="App">
         <SidePanel />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <div className="App-body">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
