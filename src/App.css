@@ -1,0 +1,6 @@
+/* General styles for the App */
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

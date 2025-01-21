@@ -1,21 +1,19 @@
-import './App.css';
-import TopPanel from './components/TopPanel/TopPanel';
-import Home from './components/Home/Home';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSatelliteDish, faSatellite } from '@fortawesome/free-solid-svg-icons';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import Routes and Route for routing
-
-// Add FontAwesome icons to the library
-library.add(faSatelliteDish, faSatellite);
+import "./App.css";
+import TopPanel from "./components/TopPanel/TopPanel";
+import Home from "./components/Home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SidePanel from "./components/SidePanel/SidePanel";
 
 function App() {
   return (
     <BrowserRouter>
       <TopPanel />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="App">
+        <SidePanel />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

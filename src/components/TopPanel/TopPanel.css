@@ -1,45 +1,53 @@
 .TopPanel {
-    display: flex; /* Utiliza flexbox para alinear los elementos */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    /*justify-content: space-between; /* Separa los elementos hacia los extremos */
-    background-color: black;
-    padding: 10px 20px; /* Espaciado interno */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background-color: #272a2d;
+    padding: 10px 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    gap: 20px;
+  }
+    
+  .system-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
   }
   
-  * {
-    margin: 0;
-    padding: 0;
+  .ground-station {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
-  
-  .status-text-good {
+
+  .ground-station-status {
     color: #c7ffc2;
   }
   
-  .status-text-info {
+  .satellite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .satellite-status {
     color: #a3f4ff;
   }
   
   .corner-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.4s ease-out;
   }
   
   .corner-icon:hover {
     transform: rotate(180deg);
   }
-  
-  .connection-status {
-    color: white;
-    font-size: 10.5pt;
-    line-height: 20px;
-    vertical-align: middle;
-    display: flex; /* Flexbox para los elementos internos */
-    align-items: center;
-    gap: 10px; /* Espaciado entre elementos */
-  }
-  
-  .connection-status span {
-    margin-left: 5px;
-  }
-  
